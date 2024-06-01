@@ -9,14 +9,16 @@ use Illuminate\Support\Facades\Hash;
 class RegisterController extends Controller
 {
     public function register(Request $request) {
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
+        if (User::where('email', $request->email)->first() == null) {
+            $user = User::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+            ]);
 
-        if($user){
-            return response()->json(['message' => 'successfully registered'], 201);
+            return response()->json(['message' => 'Successfully registered', 'error' => false], 201);
+        } else {
+            return response()->json(['message' => 'Failed to register. Email has already been used', 'error' => true], 400);
         }
     }
 }
