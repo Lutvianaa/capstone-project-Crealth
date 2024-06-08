@@ -1,66 +1,99 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Well Tracker Mobile Development
+
+Create a 2024 revival capstone project in the <u>Mobile Development</u> path
+- Muhamad Farhan <b>A177D4KY4071</b>
+- Rafilah Aulia <b>A387DKX4359</b>
+
+## Architecture
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <img src="https://i.ibb.co.com/Qrq1fv3/architecture.png" alt="Architecture">
 </p>
 
-## About Laravel
+## Components
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+    <img src="https://i.ibb.co.com/sV9KyWS/Components.png" alt="Architecture">
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Documents
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [Wireframe](https://www.figma.com/design/9vKYFs3qcyBX53Rb5iOqsV/Crealth-Mobile-App?node-id=0-1&t=iFsul8p75vrdkaqb-0)
+- [Low Fidelity](https://www.figma.com/design/9vKYFs3qcyBX53Rb5iOqsV/Crealth-Mobile-App?node-id=304-33&t=iFsul8p75vrdkaqb-0)
+- [Prototype](https://www.figma.com/design/9vKYFs3qcyBX53Rb5iOqsV/Crealth-Mobile-App?node-id=265-138&t=iFsul8p75vrdkaqb-0)
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Splash Screen\
+  Upon launching the app, a visually appealing splash screen is displayed, featuring the Terralysis logo.
+- Sign Up\
+  Users can create a new account by entering their desired username, email address, and password.
+- Sign In\
+  Registered users can log into their accounts using their username and password. The sign-in process includes authentication to verify the user's credentials.
+- Home\
+  The home screen serves as the main hub of the app, providing easy access to the main feature and guides.
+- Guide\
+  The guide feature provides step-by-step instructions and tips on how to effectively use the app. It helps users navigate through the app and maximize their experience.
+- Scan\
+  The scanning feature allows users to capture photos of soil samples using the device's camera or by selecting images from the gallery. By analyzing the uploaded soil sample images, the app provides detailed information about the soil type, including its physical, chemical, and other properties.
+- History\
+  The history section keeps track of all the soil samples scanned by the user. It provides a chronological record of previously scanned soil samples, allowing users to review all the scanned soils.
+- Profile\
+  The profile feature allows users to view and manage their account information. Users can access profile details, such as name and email, and navigate to other options such as language settings, help, and app information.
+- Change Language\
+  Users can change the app's language preference between Indonesian and English. This feature enables users to interact with the app in their preferred language.
+- Help\
+  The help section provides additional assistance by offering contact information for users to seek support and assistance from the developers.
+- About App\
+  The about app section provides information about Terralysis, including its purpose and app version.
+- Log out\
+The logout feature allows users to securely exit their account and restrict access to their saved data.
+## Permission
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Internet\
+  The app needs access to the internet to communicate with the server and retrieve data for various features, such as user authentication and soil analysis
+- Camera\
+  The camera permission is required to allow the app to utilize the device's camera for capturing images of soil samples.
+  
+## Build With
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- [Kotlin](https://kotlinlang.org)
+- [CameraX](https://developer.android.com/training/camerax)
+- [RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview)
+- [Retrofit2](https://github.com/square/retrofit)
+- [GSON Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/gson)
+- [OkHttp3](https://github.com/square/okhttp)
+- [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)
+- [Live Data](https://developer.android.com/topic/libraries/architecture/livedata)
+- [View Model](https://developer.android.com/topic/libraries/architecture/viewmodel)
+- [Navigation Component](https://developer.android.com/guide/navigation/get-started)
+- [Glide](https://github.com/bumptech/glide)
+- [Room Database](https://developer.android.com/jetpack/androidx/releases/room)
+- [Datastore](https://developer.android.com/jetpack/androidx/releases/datastore)
+- [Coroutine](https://kotlinlang.org/docs/coroutines-overview.html)
 
-## Laravel Sponsors
+## Requirement
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Android Studio
+- Target device (Android device or emulator) with minimum android version of 10(Q) or higher
 
-### Premium Partners
+## Installation
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+- Download or Clone this project to your computer
+    
+    - Repository Link : https://github.com/mrglxor/ui-capstone
 
-## Contributing
+    - On the github repository page, click on the “Code” button and select “Download ZIP” and extract the downloaded zip file to your computer
+    
+        -OR-
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    - Clone the repository :
+    
+        ```
+        git clone https://github.com/mrglxor/ui-capstone
+        ```
 
-## Code of Conduct
+- Open the project in android studio
+- Run the application
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    Before running the application, Make sure that you have either connected your android device to your computer or set up an emulator as a target to run the application. Click on the “Run” button (green triangle) in the android studio’s toolbar to run the application. Now the application has been installed on the selected device or emulator
